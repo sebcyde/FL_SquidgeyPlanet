@@ -1,0 +1,129 @@
+@import "../../variable.scss";
+
+.CenteredSectionContainer,
+.NormalSectionContainer {
+	// background-color: transparent !important;
+	background-color: $Cyan;
+	// box-shadow: $Shadow;
+	// border-radius: 5px;
+	align-items: center;
+	text-align: center;
+	// margin: 20px 0px;
+	display: flex;
+	padding: 20px;
+	height: 400px;
+
+	&.orange {
+		background-color: $OrangeBackground !important;
+		color: $WhiteText !important;
+	}
+
+	&.lightblue {
+		background-color: $LightBlueBackground !important;
+		color: $WhiteText !important;
+	}
+
+	&.darkblue {
+		background-color: $DarkBlueBackground !important;
+		color: $WhiteText !important;
+	}
+
+	&.yellow {
+		background-color: $YellowBackground !important;
+		color: $BlackText !important;
+	}
+
+	&.lightyellow {
+		background-color: $LightYellowBackground !important;
+		color: $BlackText !important;
+	}
+
+	&.red {
+		background-color: $RedBackground !important;
+		color: $WhiteText !important;
+	}
+
+	> div {
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.SectionImageContainer {
+		// border-radius: 5px;
+
+		// border: 1px solid red;
+		justify-content: center;
+		align-items: center;
+		object-fit: cover;
+		overflow: hidden;
+		display: flex;
+
+		img {
+			border-radius: 5px;
+			height: 100%;
+			width: auto;
+		}
+	}
+
+	.SectionTextContainer {
+		// border: 1px solid green;
+		align-items: center;
+		padding: 0px 30px;
+		display: flex;
+	}
+
+	&:nth-child(2n) {
+		background-color: $Orange;
+	}
+}
+
+.CenteredSectionContainer {
+	flex-direction: column;
+
+	&:nth-child(2n) {
+		.ContentContainer {
+			flex-direction: row-reverse;
+		}
+	}
+
+	.SectionTitle {
+		margin: 20px auto 40px;
+	}
+
+	.ContentContainer {
+		display: flex;
+
+		> div {
+			justify-content: center;
+			text-align: center;
+			display: flex;
+			padding: 0px 20px;
+		}
+
+		.SectionImageContainer {
+			width: 50%;
+		}
+		.SectionTextContainer {
+			width: 50%;
+
+			.SectionTextContent {
+			}
+		}
+	}
+}
+
+.NormalSectionContainer {
+	&:nth-child(2n) {
+		flex-direction: row-reverse;
+	}
+
+	.SectionImageContainer {
+		width: 50%;
+	}
+	.SectionTextContainer {
+		width: 50%;
+
+		.SectionTextContent {
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_item_items",
+  "info": {
+    "displayName": "Item",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "Item_Name": {
+      "type": "string"
+    },
+    "Item_Description": {
+      "type": "richtext"
+    },
+    "Item_Price": {
+      "type": "decimal"
+    },
+    "Item_Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "In_Stock": {
+      "type": "boolean"
+    }
+  }
+}

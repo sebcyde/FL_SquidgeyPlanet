@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "history_pages",
+  "info": {
+    "singularName": "history-page",
+    "pluralName": "history-pages",
+    "displayName": "History Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_content": {
+      "type": "string",
+      "default": "Behind the brand",
+      "required": true
+    },
+    "text_content_one": {
+      "type": "richtext"
+    },
+    "image_content_one": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "text_content_two": {
+      "type": "richtext"
+    },
+    "image_content_two": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

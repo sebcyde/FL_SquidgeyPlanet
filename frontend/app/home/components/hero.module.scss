@@ -1,0 +1,41 @@
+.HeroContainer {
+	height: calc(60vh);
+	position: relative;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+
+	.Image {
+		position: relative;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+	.ContentContainer {
+		position: absolute;
+		text-align: end;
+		color: white;
+		right: 50px;
+		width: 40%;
+		top: 50%;
+		transform: translateY(-50%);
+
+		> * {
+			text-shadow: 2px 2px 2px black;
+			line-height: 20px;
+			width: 100%;
+		}
+
+		.Title {
+			margin-bottom: 40px;
+			height: fit-content;
+			font-size: 3rem;
+			margin-top: 0px;
+		}
+
+		.Content {
+			margin: 0px;
+		}
+	}
+}

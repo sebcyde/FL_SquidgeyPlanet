@@ -1,0 +1,38 @@
+@import "../variable.scss";
+
+.Products {
+	padding: 20px;
+
+	h2 {
+		margin-bottom: 30px;
+		text-align: center;
+		margin: 20px auto;
+		font-size: 30px;
+		width: 100%;
+	}
+
+	.ProductRow {
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 3rem auto;
+		display: flex;
+		width: 80%;
+
+		.NoStockText,
+		.LowStockText {
+			margin-top: 10px !important;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: bold;
+			width: 100%;
+		}
+
+		.LowStockText {
+			color: orange;
+		}
+
+		.NoStockText {
+			color: Red;
+		}
+	}
+}

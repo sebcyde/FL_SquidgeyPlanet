@@ -1,0 +1,14 @@
+@import "../../variable.scss";
+
+.LoadingPage {
+	justify-content: center;
+	box-sizing: border-box;
+	align-items: center;
+	display: flex;
+	height: calc(100vh - 250px);
+	width: 100%;
+
+	.MuiCircularProgress-root {
+		color: $Orange;
+	}
+}

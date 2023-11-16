@@ -1,0 +1,12 @@
+.HeaderImageContainer {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: auto;
+	width: 100%;
+	.HeaderImage {
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+}

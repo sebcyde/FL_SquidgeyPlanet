@@ -1,0 +1,24 @@
+@import "./variable.scss";
+
+html {
+	background-color: $Gray;
+	box-sizing: border-box;
+	font-family: $TextFont;
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+
+	body {
+		background-color: $CyanBackground;
+		width: calc(100% - 20px);
+		overflow-x: hidden;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	// Mobile Globals
+	@media (max-width: 768px) {
+	}
+}

@@ -10,7 +10,7 @@ import AOS from "aos";
 // TODO - Swap out api prefix for content sections
 
 type props = {
-	Content: ContentSection;
+	Content: any;
 	key: number;
 };
 

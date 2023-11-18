@@ -10,10 +10,7 @@ type Props = {
 const HeaderImage = ({ image }: Props) => {
 	return (
 		<div className={styles.HeaderImageContainer}>
-			<img
-				src={`http://localhost:1337${getImageURL(image)}`}
-				className={styles.HeaderImage}
-			/>
+			<img src={`${getImageURL(image)}`} className={styles.HeaderImage} />
 		</div>
 	);
 };

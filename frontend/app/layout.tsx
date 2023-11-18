@@ -9,7 +9,7 @@ import "./globals.scss";
 
 // TODO - Frontend Metadata
 export const metadata: Metadata = {
-	title: "Squidgey Planet V1",
+	title: "Squidgey Planet",
 	description: "Test",
 };
 

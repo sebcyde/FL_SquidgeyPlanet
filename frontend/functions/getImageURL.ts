@@ -11,5 +11,5 @@ export const getImageURL = (img: ContentImageType) => {
 	} else if (img?.url) {
 		imgURL = img.url;
 	}
-	return `http://localhost:1337${imgURL}`;
+	return `http://127.0.0.1:1337${imgURL}`;
 };

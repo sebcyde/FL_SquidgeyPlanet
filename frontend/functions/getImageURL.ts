@@ -11,5 +11,5 @@ export const getImageURL = (img: ContentImageType) => {
 	} else if (img?.url) {
 		imgURL = img.url;
 	}
-	return `http://127.0.0.1:1337${imgURL}`;
+	return `https://fl-squidgey-planet.vercel.app/${imgURL}`;
 };

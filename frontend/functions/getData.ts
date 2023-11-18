@@ -1,6 +1,8 @@
 import axios from "axios";
 
 export const getData = async (Endpoint: String) => {
-	const RawData = await axios.get(`http://127.0.0.1:1337/api/${Endpoint}`);
+	const RawData = await axios.get(
+		`https://fl-squidgey-planet.vercel.app//api/${Endpoint}`
+	);
 	return RawData.data.data;
 };
